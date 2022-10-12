@@ -16,6 +16,7 @@ for(var i = 0; i<numberVar; i++)
 // dectecting keyboard press
 document.addEventListener("keydown", function(event){
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 
