@@ -8,7 +8,7 @@ for(var i = 0; i<numberVar; i++)
         { 
             var buttonOfeach = this.innerHTML;
             makeSound(buttonOfeach);
-          
+            buttonAnimation(buttonOfeach);
         }
     );
 }
@@ -50,7 +50,7 @@ function makeSound(key){
         var kick = new Audio("sounds/kick-bass.mp3");
         kick.play();
     break;
-    default: console.log(innerHTML);
+    default: console.log(buttonOfeach);
  }
 
   
@@ -58,7 +58,7 @@ function makeSound(key){
 
 function buttonAnimation(currentKey){
 
-    var activeButton =  document.querySelector("."+currentKey);
+    var activeButton =  document.querySelector("." + currentKey);
 
     activeButton.classList.add("pressed");
 
