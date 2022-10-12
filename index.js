@@ -4,11 +4,11 @@ var numberVar = document.querySelectorAll(".drum").length;
 
 for(var i = 0; i<numberVar; i++)
 {
-    document.querySelectorAll(".drum")[i].addEventListener("click", function()
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() //the event Listener allows to wait the click
         { 
             var buttonOfeach = this.innerHTML;
             makeSound(buttonOfeach);
-            buttonAnimation(buttonOfeach);
+            buttonAnimation(buttonOfeach); //activate the hover on clincking
         }
     );
 }
@@ -16,7 +16,7 @@ for(var i = 0; i<numberVar; i++)
 // dectecting keyboard press
 document.addEventListener("keydown", function(event){
     makeSound(event.key);
-    buttonAnimation(event.key);
+    buttonAnimation(event.key); //activate the hover on keyboard pressing
 });
 
 
