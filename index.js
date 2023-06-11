@@ -20,7 +20,7 @@ document.addEventListener("keydown", function(event){
 });
 
 
-/*
+
 function makeSound(key){
     switch (key){
     case "w" || "W":
@@ -53,7 +53,7 @@ function makeSound(key){
     break;
     default: console.log(buttonOfeach);
  }
-*/
+
   
 }
 
